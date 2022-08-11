@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Create = () => {
-  const [lists, setLists] = useState([]);
+  const [lists, setLists] = useRecoilState(listState);
   const [address, setAddress] = useState("aiueo");
   const [type, setType] = useState("flat");
 
